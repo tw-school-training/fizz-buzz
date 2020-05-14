@@ -31,7 +31,6 @@ public class FizzBuzzTest {
         assertThat(result, is("Fizz"));
     }
 
-
     @Test
     public void should_return_buzz_given_number_can_be_divided_by_5() {
         //given
@@ -42,5 +41,17 @@ public class FizzBuzzTest {
 
         //then
         assertThat(result, is("Buzz"));
+    }
+
+    @Test
+    public void should_return_buzz_given_number_can_be_divided_by_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(7);
+
+        //then
+        assertThat(result, is("Whizz"));
     }
 }
