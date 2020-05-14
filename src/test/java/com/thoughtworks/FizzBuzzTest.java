@@ -44,7 +44,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_buzz_given_number_can_be_divided_by_7() {
+    public void should_return_whizz_given_number_can_be_divided_by_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -53,5 +53,17 @@ public class FizzBuzzTest {
 
         //then
         assertThat(result, is("Whizz"));
+    }
+
+    @Test
+    public void should_return_fizzbuzz_given_number_can_be_divided_by_3_and_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(15);
+
+        //then
+        assertThat(result, is("FizzBuzz"));
     }
 }
