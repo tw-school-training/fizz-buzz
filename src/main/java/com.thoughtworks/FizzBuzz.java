@@ -2,22 +2,26 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int number) {
-        if (number % 3 == 0 && number % 5 == 0) {
+        if (isDividedBy(number, 3) && isDividedBy(number, 5)) {
             return "FizzBuzz";
         }
 
-        if (number % 3 == 0) {
+        if (isDividedBy(number, 3)) {
             return "Fizz";
         }
 
-        if (number % 5 == 0) {
+        if (isDividedBy(number, 5)) {
             return "Buzz";
         }
 
-        if (number % 7 == 0) {
+        if (isDividedBy(number, 7)) {
             return "Whizz";
         }
 
         return String.valueOf(number);
+    }
+
+    private boolean isDividedBy(int number, int divisor) {
+        return number % divisor == 0;
     }
 }
