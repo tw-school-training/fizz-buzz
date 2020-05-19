@@ -61,7 +61,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         //when
-        String result = fizzBuzz.say(15);
+        String result = fizzBuzz.say(60);
 
         //then
         assertThat(result, is("FizzBuzz"));
@@ -97,7 +97,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         //when
-        String result = fizzBuzz.say(105);
+        String result = fizzBuzz.say(210);
 
         //then
         assertThat(result, is("FizzBuzzWhizz"));
@@ -121,7 +121,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         //when
-        String result = fizzBuzz.say(315);
+        String result = fizzBuzz.say(630);
 
         //then
         assertThat(result, is("Fizz"));
@@ -157,7 +157,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         //when
-        String result = fizzBuzz.say(35);
+        String result = fizzBuzz.say(1330);
 
         //then
         assertThat(result, is("Fizz"));
@@ -181,7 +181,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         //when
-        String result = fizzBuzz.say(305);
+        String result = fizzBuzz.say(310);
 
         //then
         assertThat(result, is("Fizz"));
