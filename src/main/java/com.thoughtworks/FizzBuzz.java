@@ -2,6 +2,10 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int number) {
+        if (isDividedBy(number, 3) && isDividedBy(number, 5) && isDividedBy(number, 7)) {
+            return "FizzBuzzWhizz";
+        }
+
         if (isDividedBy(number, 3) && isDividedBy(number, 5)) {
             return "FizzBuzz";
         }
