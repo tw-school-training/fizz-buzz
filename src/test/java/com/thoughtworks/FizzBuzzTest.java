@@ -277,4 +277,40 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("FizzWhizz"));
     }
+
+    @Test
+    public void should_return_fizzwhizz_given_number_contains_7_and_can_be_divided_by_both_of_3_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(147);
+
+        //then
+        assertThat(result, is("FizzWhizz"));
+    }
+
+    @Test
+    public void should_return_fizz_given_number_contains_7_and_can_be_divided_by_3_but_not_divided_by_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(75);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
+
+    @Test
+    public void should_return_whizz_given_number_contains_7_and_can_be_divided_by_7_but_not_divided_by_3() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(70);
+
+        //then
+        assertThat(result, is("Whizz"));
+    }
 }
