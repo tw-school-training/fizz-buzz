@@ -114,4 +114,88 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("Fizz"));
     }
+
+    @Test
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_3_and_5_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(315);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
+
+    @Test
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_3_and_5_and_not_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(30);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
+
+    @Test
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_3_and_7_and_not_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(63);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
+
+    @Test
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_5_and_7_and_not_3() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(35);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
+
+    @Test
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_3_and_not_5_and_not_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(9);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
+
+    @Test
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_5_and_not_3_and_not_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(305);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
+
+    @Test
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_7_and_not_3_and_not_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(364);
+
+        //then
+        assertThat(result, is("Fizz"));
+    }
 }
