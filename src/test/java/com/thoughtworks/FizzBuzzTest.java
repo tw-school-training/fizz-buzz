@@ -253,4 +253,16 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("Whizz"));
     }
+
+    @Test
+    public void should_return_the_number_given_number_contains_7_and_can_not_be_divided_by_both_3_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(17);
+
+        //then
+        assertThat(result, is("17"));
+    }
 }
