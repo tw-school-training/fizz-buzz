@@ -198,4 +198,17 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("Fizz"));
     }
+
+
+    @Test
+    public void should_return_the_number_given_number_contains_5_and_can_not_be_divided_by_5_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(51);
+
+        //then
+        assertThat(result, is("51"));
+    }
 }

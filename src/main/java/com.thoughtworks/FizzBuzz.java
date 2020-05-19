@@ -7,7 +7,7 @@ public class FizzBuzz {
             return "Fizz";
         }
 
-        if (isDividedBy(number, 3)) {
+        if (isDividedBy(number, 3) && !String.valueOf(number).contains(String.valueOf(5))) {
             result += "Fizz";
         }
 
