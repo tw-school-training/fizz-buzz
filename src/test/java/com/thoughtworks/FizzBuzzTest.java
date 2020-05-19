@@ -85,7 +85,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         //when
-        String result = fizzBuzz.say(35);
+        String result = fizzBuzz.say(70);
 
         //then
         assertThat(result, is("BuzzWhizz"));
