@@ -2,35 +2,21 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int number) {
-        if (isDividedBy(number, 3) && isDividedBy(number, 5) && isDividedBy(number, 7)) {
-            return "FizzBuzzWhizz";
-        }
-
-        if (isDividedBy(number, 3) && isDividedBy(number, 5)) {
-            return "FizzBuzz";
-        }
-
-        if (isDividedBy(number, 3) && isDividedBy(number, 7)) {
-            return "FizzWhizz";
-        }
-
-        if (isDividedBy(number, 5) && isDividedBy(number, 7)) {
-            return "BuzzWhizz";
-        }
+        String result = "";
 
         if (isDividedBy(number, 3)) {
-            return "Fizz";
+            result += "Fizz";
         }
 
         if (isDividedBy(number, 5)) {
-            return "Buzz";
+            result += "Buzz";
         }
 
         if (isDividedBy(number, 7)) {
-            return "Whizz";
+            result += "Whizz";
         }
 
-        return String.valueOf(number);
+        return result.length() > 0 ? result : String.valueOf(number);
     }
 
     private boolean isDividedBy(int number, int divisor) {
