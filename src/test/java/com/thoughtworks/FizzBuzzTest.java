@@ -66,4 +66,17 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("FizzBuzz"));
     }
+
+
+    @Test
+    public void should_return_fizzwhizz_given_number_can_be_divided_by_3_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(21);
+
+        //then
+        assertThat(result, is("FizzWhizz"));
+    }
 }

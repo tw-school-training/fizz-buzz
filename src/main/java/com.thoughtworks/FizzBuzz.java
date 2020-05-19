@@ -6,6 +6,10 @@ public class FizzBuzz {
             return "FizzBuzz";
         }
 
+        if (isDividedBy(number, 3) && isDividedBy(number, 7)) {
+            return "FizzWhizz";
+        }
+
         if (isDividedBy(number, 3)) {
             return "Fizz";
         }
