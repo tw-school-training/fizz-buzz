@@ -219,8 +219,12 @@ public class FizzBuzzTest {
 
         //when
         String result = fizzBuzz.say(35);
+        String secondResult = fizzBuzz.say(105);
+        String thirdResult = fizzBuzz.say(315);
 
         //then
         assertThat(result, is("BuzzWhizz"));
+        assertThat(secondResult, is("BuzzWhizz"));
+        assertThat(thirdResult, is("BuzzWhizz"));
     }
 }
