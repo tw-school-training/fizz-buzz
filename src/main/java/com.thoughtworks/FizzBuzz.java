@@ -7,11 +7,11 @@ public class FizzBuzz {
             return "Fizz";
         }
 
-        if (isDividedBy(number, 3) && !contains(number, 5)) {
+        if (isDividedBy(number, 3) && (!contains(number, 5) || contains(number, 7))) {
             result += "Fizz";
         }
 
-        if (isDividedBy(number, 5)) {
+        if (isDividedBy(number, 5) && !contains(number, 7)) {
             result += "Buzz";
         }
 

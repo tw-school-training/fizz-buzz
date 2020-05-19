@@ -265,4 +265,16 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("17"));
     }
+
+    @Test
+    public void should_return_fizzwhizz_given_number_contains_7_and_can_be_divided_by_all_of_3_and_5_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(735);
+
+        //then
+        assertThat(result, is("FizzWhizz"));
+    }
 }
