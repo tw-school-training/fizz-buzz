@@ -3,11 +3,11 @@ package com.thoughtworks;
 public class FizzBuzz {
     public String say(int number) {
         String result = "";
-        if (String.valueOf(number).contains(String.valueOf(3))) {
+        if (contains(number, 3)) {
             return "Fizz";
         }
 
-        if (isDividedBy(number, 3) && !String.valueOf(number).contains(String.valueOf(5))) {
+        if (isDividedBy(number, 3) && !contains(number, 5)) {
             result += "Fizz";
         }
 
@@ -20,6 +20,10 @@ public class FizzBuzz {
         }
 
         return result.length() > 0 ? result : String.valueOf(number);
+    }
+
+    private boolean contains(int number, int containedNumber) {
+        return String.valueOf(number).contains(String.valueOf(containedNumber));
     }
 
     private boolean isDividedBy(int number, int divisor) {
