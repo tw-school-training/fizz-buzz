@@ -3,6 +3,9 @@ package com.thoughtworks;
 public class FizzBuzz {
     public String say(int number) {
         String result = "";
+        if (String.valueOf(number).contains(String.valueOf(3))) {
+            return "Fizz";
+        }
 
         if (isDividedBy(number, 3)) {
             result += "Fizz";
