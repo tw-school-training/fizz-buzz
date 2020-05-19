@@ -3,7 +3,7 @@ package com.thoughtworks;
 public class FizzBuzz {
     public String say(int number) {
         String result = "";
-        if (contains(number, 3)) {
+        if (contains(number, 3) && !contains(number, 5)) {
             return "Fizz";
         }
 

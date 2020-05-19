@@ -211,4 +211,16 @@ public class FizzBuzzTest {
         //then
         assertThat(result, is("51"));
     }
+
+    @Test
+    public void should_return_buzzwhizz_given_number_contains_5_and_can_be_divided_by_5_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(35);
+
+        //then
+        assertThat(result, is("BuzzWhizz"));
+    }
 }
