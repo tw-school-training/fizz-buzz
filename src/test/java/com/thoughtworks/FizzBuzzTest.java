@@ -227,4 +227,30 @@ public class FizzBuzzTest {
         assertThat(secondResult, is("BuzzWhizz"));
         assertThat(thirdResult, is("BuzzWhizz"));
     }
+
+    @Test
+    public void should_return_buzz_given_number_contains_5_and_can_be_divided_by_5_and_not_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(15);
+        String secondResult = fizzBuzz.say(305);
+
+        //then
+        assertThat(result, is("Buzz"));
+        assertThat(secondResult, is("Buzz"));
+    }
+
+    @Test
+    public void should_return_buzz_given_number_contains_5_and_can_be_divided_by_7_and_not_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(56);
+
+        //then
+        assertThat(result, is("Whizz"));
+    }
 }
