@@ -104,7 +104,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_given_number_contains_3_and_can_not_be_divided_by_3_and_5_and_7() {
+    public void should_return_fizz_given_number_contains_3_and_can_not_be_divided_by_all_of_3_and_5_and_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -128,7 +128,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_3_and_5_and_not_7() {
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_both_of_3_and_5_but_not_divided_by_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -140,7 +140,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_3_and_7_and_not_5() {
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_both_of_3_and_7_but_not_divided_by_5() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -152,7 +152,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_5_and_7_and_not_3() {
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_both_of_5_and_7_but_not_divided_by_3() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -164,7 +164,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_3_and_not_5_and_not_7() {
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_3_but_not_divided_by_either_5_or_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -176,7 +176,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_5_and_not_3_and_not_7() {
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_5_but_not_divided_by_either_3_or_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -188,7 +188,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_7_and_not_3_and_not_5() {
+    public void should_return_fizz_given_number_contains_3_and_can_be_divided_by_7_but_not_divided_by_either_3_or_5() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -201,7 +201,7 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void should_return_the_number_given_number_contains_5_and_can_not_be_divided_by_5_and_7() {
+    public void should_return_the_number_given_number_contains_5_and_can_not_be_divided_by_either_5_or_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -213,7 +213,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_buzzwhizz_given_number_contains_5_and_can_be_divided_by_5_and_7() {
+    public void should_return_buzzwhizz_given_number_contains_5_and_can_be_divided_by_both_of_5_and_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -229,7 +229,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_buzz_given_number_contains_5_and_can_be_divided_by_5_and_not_7() {
+    public void should_return_buzz_given_number_contains_5_and_can_be_divided_by_5_but_not_divided_by_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -243,7 +243,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_buzz_given_number_contains_5_and_can_be_divided_by_7_and_not_5() {
+    public void should_return_buzz_given_number_contains_5_and_can_be_divided_by_7_but_not_divided_by_5() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -255,7 +255,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_the_number_given_number_contains_7_and_can_not_be_divided_by_both_3_and_7() {
+    public void should_return_the_number_given_number_contains_7_but_can_not_be_divided_by_either_3_or_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -279,7 +279,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizzwhizz_given_number_contains_7_and_can_be_divided_by_both_of_3_and_7() {
+    public void should_return_fizzwhizz_given_number_contains_7_and_can_be_divided_by_either_3_or_7() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
