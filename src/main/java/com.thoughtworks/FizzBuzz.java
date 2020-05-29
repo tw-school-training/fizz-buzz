@@ -23,11 +23,11 @@ public class FizzBuzz {
     }
 
     private boolean contains(int number, int containedNumber) {
-        return String.valueOf(number).contains(String.valueOf(containedNumber));
+        return new FizzBuzzNumber(number).contains(containedNumber);
     }
 
     private boolean isDividedBy(int number, int divisor) {
-        return number % divisor == 0;
+        return new FizzBuzzNumber(number).isDividedBy(divisor);
     }
     
     public class FizzBuzzNumber {
