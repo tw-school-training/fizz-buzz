@@ -3,19 +3,20 @@ package com.thoughtworks;
 public class FizzBuzz {
     public String say(int number) {
         String result = "";
-        if (new FizzBuzzNumber(number).contains(3) && !new FizzBuzzNumber(number).contains(5)) {
+        FizzBuzzNumber fizzBuzzNumber = new FizzBuzzNumber(number);
+        if (fizzBuzzNumber.contains(3) && !fizzBuzzNumber.contains(5)) {
             return "Fizz";
         }
 
-        if (new FizzBuzzNumber(number).isDividedBy(3) && (!new FizzBuzzNumber(number).contains(5) || new FizzBuzzNumber(number).contains(7))) {
+        if (fizzBuzzNumber.isDividedBy(3) && (!fizzBuzzNumber.contains(5) || fizzBuzzNumber.contains(7))) {
             result += "Fizz";
         }
 
-        if (new FizzBuzzNumber(number).isDividedBy(5) && !new FizzBuzzNumber(number).contains(7)) {
+        if (fizzBuzzNumber.isDividedBy(5) && !fizzBuzzNumber.contains(7)) {
             result += "Buzz";
         }
 
-        if (new FizzBuzzNumber(number).isDividedBy(7)) {
+        if (fizzBuzzNumber.isDividedBy(7)) {
             result += "Whizz";
         }
 
