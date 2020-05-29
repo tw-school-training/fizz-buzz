@@ -7,25 +7,21 @@ public class FizzBuzz {
             return "Fizz";
         }
 
-        if (isDividedBy(number, 3) && (!new FizzBuzzNumber(number).contains(5) || new FizzBuzzNumber(number).contains(7))) {
+        if (new FizzBuzzNumber(number).isDividedBy(3) && (!new FizzBuzzNumber(number).contains(5) || new FizzBuzzNumber(number).contains(7))) {
             result += "Fizz";
         }
 
-        if (isDividedBy(number, 5) && !new FizzBuzzNumber(number).contains(7)) {
+        if (new FizzBuzzNumber(number).isDividedBy(5) && !new FizzBuzzNumber(number).contains(7)) {
             result += "Buzz";
         }
 
-        if (isDividedBy(number, 7)) {
+        if (new FizzBuzzNumber(number).isDividedBy(7)) {
             result += "Whizz";
         }
 
         return result.length() > 0 ? result : String.valueOf(number);
     }
 
-    private boolean isDividedBy(int number, int divisor) {
-        return new FizzBuzzNumber(number).isDividedBy(divisor);
-    }
-    
     public class FizzBuzzNumber {
         private int number;
 
