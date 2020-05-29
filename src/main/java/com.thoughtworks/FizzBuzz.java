@@ -29,4 +29,21 @@ public class FizzBuzz {
     private boolean isDividedBy(int number, int divisor) {
         return number % divisor == 0;
     }
+    
+    public class FizzBuzzNumber {
+        private int number;
+
+        public FizzBuzzNumber(int number) {
+            this.number = number;
+        }
+
+        private boolean contains(int containedNumber) {
+            return String.valueOf(number).contains(String.valueOf(containedNumber));
+        }
+
+        private boolean isDividedBy(int divisor) {
+            return number % divisor == 0;
+        }
+
+    }
 }
