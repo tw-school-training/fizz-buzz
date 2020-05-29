@@ -30,12 +30,12 @@ public class FizzBuzz {
             this.number = number;
         }
 
-        private boolean contains(int containedNumber) {
-            return String.valueOf(number).contains(String.valueOf(containedNumber));
+        private boolean contains(int number) {
+            return String.valueOf(this.number).contains(String.valueOf(number));
         }
 
-        private boolean isDividedBy(int divisor) {
-            return number % divisor == 0;
+        private boolean isDividedBy(int number) {
+            return this.number % number == 0;
         }
 
     }
