@@ -2,12 +2,12 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int number) {
-        String result = "";
         FizzBuzzNumber fizzBuzzNumber = new FizzBuzzNumber(number);
         if (fizzBuzzNumber.contains(3) && !fizzBuzzNumber.contains(5)) {
             return "Fizz";
         }
 
+        String result = "";
         if (fizzBuzzNumber.isDividedBy(3) && (!fizzBuzzNumber.contains(5) || fizzBuzzNumber.contains(7))) {
             result += "Fizz";
         }
