@@ -3,15 +3,15 @@ package com.thoughtworks;
 public class FizzBuzz {
     public String say(int number) {
         String result = "";
-        if (contains(number, 3) && !contains(number, 5)) {
+        if (new FizzBuzzNumber(number).contains(3) && !new FizzBuzzNumber(number).contains(5)) {
             return "Fizz";
         }
 
-        if (isDividedBy(number, 3) && (!contains(number, 5) || contains(number, 7))) {
+        if (isDividedBy(number, 3) && (!new FizzBuzzNumber(number).contains(5) || new FizzBuzzNumber(number).contains(7))) {
             result += "Fizz";
         }
 
-        if (isDividedBy(number, 5) && !contains(number, 7)) {
+        if (isDividedBy(number, 5) && !new FizzBuzzNumber(number).contains(7)) {
             result += "Buzz";
         }
 
@@ -20,10 +20,6 @@ public class FizzBuzz {
         }
 
         return result.length() > 0 ? result : String.valueOf(number);
-    }
-
-    private boolean contains(int number, int containedNumber) {
-        return new FizzBuzzNumber(number).contains(containedNumber);
     }
 
     private boolean isDividedBy(int number, int divisor) {
